@@ -1,12 +1,11 @@
 {
-  "name": "jsftp-lsr",
+  "name": "@peterkottas/jsftp-lsr",
   "version": "1.0.0",
   "description": "Recursively get nested directories with jsftp, like ls -R",
   "license": "MIT",
-  "repository": "firerap/jsftp-lsr",
+  "repository": "https://github.com/PeterKottas/jsftp-lsr",
   "author": {
-    "name": "Ivan Drondov",
-    "email": "idrondov@gmail.com"
+    "name": "Peter Kottas",
   },
   "engines": {
     "node": ">=0.10.0"
@@ -31,7 +30,8 @@
     "recursive"
   ],
   "dependencies": {
-    "async": "2.0.0-rc.3"
+    "async": "2.3.0",
+	"slash": "2.0.0"
   },
   "devDependencies": {
     "ftp-test-server": "0.0.2",

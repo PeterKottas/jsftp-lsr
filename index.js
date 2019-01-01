@@ -1,5 +1,6 @@
 var path = require("path");
 var async = require("async");
+const slash = require('slash');
 
 var FTP_DIR_TYPE = 1;
 
@@ -32,7 +33,10 @@ function lsr(root, callback) {
 	var currentDirectory = result[0];
 	async.doWhilst(
 		function iter(clb) {
-			var _path = _lsrFindPath(result[0], currentDirectory, root);
+      var _path = _lsrFindPath(result[0], currentDirectory, root);
+
+      // Because path outputs \\ on windows which is causing problems
+      _path = slash(_path);
 
 			ftp.ls(_path, function(err, data) {
 				if(err) return clb(err);
