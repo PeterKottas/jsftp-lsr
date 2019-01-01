@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/PeterKottas/jsftp-lsr",
   "author": {
-    "name": "Peter Kottas",
+    "name": "Peter Kottas"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "async": "2.3.0",
-	"slash": "2.0.0"
+    "slash": "2.0.0"
   },
   "devDependencies": {
     "ftp-test-server": "0.0.2",
